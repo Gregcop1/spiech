@@ -1,0 +1,65 @@
+---
+title: Signature architecturale
+menuItem: 1
+bodyClass: signature-architecturale
+---
+{{#extend "default"}}
+
+{{#content 'subMenu'}}
+<div class="subMenu">
+  <span>{{this.title}}</span>
+  <ul id="subNav" class="nav subNav">
+    <li>Silhouette</li>
+    <li>Perception</li>
+    <li>Nouvelle ère</li>
+    <li>Changer de perspectives</li>
+  </ul>
+</div>
+{{/content}}
+
+{{#content "body"}}
+<div id="slices" class="slices">
+  <div id="silhouette" class="slice slice-1 future">
+    <div class="column column-50 column-left">
+      <div class="bloc blocImage"></div>
+      <div class="bloc blocTitle">
+        <h2>Une silhouette unique à La Défense</h2>
+      </div>
+      <div class="bloc blocInfos">
+        <p class="align-justify">Imaginé par l’architecte japonais Kisho Kurokawa, élève de Kenzo Tage, Pacific est un immeuble distinctif, d’une qualité architecturale rare à La Défense. <strong>Contemporaine, son architecture à facettes fait preuve de maîtrise autant que de personnalité.</strong> Le portique dessiné par la façade de l’immeuble, évocation du Tarii, le portail traditionnel japonais, est un ouvrage autant imposant qu’aérien. Cette stature convient parfaitement à une entreprise souhaitant disposer d’un siège tout à la fois prestigieux et contemporain.</p>
+      </div>
+    </div>
+    <div class="arrowDown">d</div>
+  </div>
+  <div id="perception" class="slice slice-2 future">
+    <div class="column column-50 column-left">
+      <div class="bloc blocInfos">
+        <p class="align-justify">Chaque Aile de l’immeuble, Est et Ouest, bénéficie d’un hall dédié, premier contact privilégié et témoignage essentiel de l’identité de Pacific et de son offre exclusive</p>
+        <p class="mini">Hall Aile Ouest</p>
+      </div>
+    </div>
+  </div>
+  <div id="nouvelle-ere" class="slice slice-3 future">
+    <div class="column column-50 column-left">
+      <div class="bloc blocInfos">
+        <p class="align-justify">Entièrement repensés en 2014, ces espaces d’accueil associent lumière, matériaux contemporains, sobriété et élégance des volumes afin de procurer aux utilisateurs et aux visiteurs une véritable sensation de bien-être. Ils sont une composante essentielle du renouveau de Pacific.</p>
+        <p class="mini">Hall Aile Est</p>
+      </div>
+    </div>
+  </div>
+  <div id="changer-de-perspectives" class="slice slice-4 future">
+    <div class="column column-50 column-left"></div>
+    <div class="column column-50 column-right">
+      <h2>Changer<br />de perspective</h2>
+      <p class="align-justify">Depuis chacune des fenêtres de Pacific, située dans l’un des secteurs les plus aérés de La Défense, <strong>les collaborateurs peuvent apprécier des vues claires et dégagées.</strong> Ces panoramas ouverts, tant sur l’Esplanade de La Défense que sur Paris et les communes avoisinantes, participent à créer une atmosphère sereine, propice à la performance. </p>
+    </div>
+  </div>
+</div>
+{{/content}}
+
+
+{{#content "scripts" mode="append"}}
+<script src="{{assets}}/js/SliceManager.js"></script>
+<script src="{{assets}}/js/prenezPosition.js"></script>
+{{/content}}
+{{/extend}}

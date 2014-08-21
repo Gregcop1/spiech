@@ -1,0 +1,16 @@
+{
+  "name": "spiech",
+  "description": "Sandrine Piechota website",
+  "version": "1.0.0",
+  "author": {
+    "name": "Grégory Copin"
+  },
+  "repository": {},
+  "bugs": {},
+  "dependencies": {
+    "modernizr": "latest",
+    "jquery": "~1.10.0",
+  },
+  "devDependencies": {
+  }
+}

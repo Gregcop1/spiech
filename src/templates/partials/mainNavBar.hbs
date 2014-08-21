@@ -1,0 +1,18 @@
+---
+component: navbar
+---
+
+<!--div class="preloader"></div-->
+<div id="header" class="header">
+  <h1 class="logo"><a href="{{relative page.dest ""}}"><img src="{{assets}}/img/logo.png" width="76" height="83" alt="{{ site.title }}"/></a></h1>
+  <div class="menu">
+    <ul  id="mainNav" class="nav mainNav">
+      {{#each site.mainMenu}}
+        <li class="item-{{@index}}{{#equal @index ../this.menuItem}} active{{/equal}}"><a href="{{this.target}}"><span class="mini">{{ this.overTitle }}</span>{{ this.title }}</a></li>
+      {{/each}}
+    </ul>
+
+    {{#block 'subMenu'}}
+    {{/block}}
+  </div>
+</div>

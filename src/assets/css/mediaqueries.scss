@@ -1,0 +1,19 @@
+@media screen and (min-width: 0px) {
+    //Apply max-width on image for browser capable of handling it
+    .csc-textpic-imagewrap, img { max-width: 100%; height: auto;}
+}
+
+// 764px is the vertical iPad width, you should edit it to match the wanted layout breakpoint
+@media screen and (max-width: 764px) {
+    // Reset layout to one column
+    // .column { display: block; width: auto!important; margin: 0!important; }
+}
+
+@media screen and (max-width: 1024px) {
+  .mainNav  li { margin: 6px 10px 6px 10px; }
+  .subMenu { padding: 15px 10px;}
+  .subMenu li { font-size: 1.1em; }
+  .subMenu li:before { margin: 0 10px; }
+  .bloc h2 { margin: 10px 0; }
+  .home .slice-1 .bloc { padding: 20px; }
+}

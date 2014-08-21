@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{title}} | {{site.title}}</title>
+    <link rel="stylesheet" href="{{assets}}/css/jquery.fancybox.css" media="all" />
+    <link rel="stylesheet" href="{{assets}}/css/main.css" media="all" />
+
+    <script type="text/javascript"> if(navigator.appName.indexOf("Internet Explorer")!=-1) { document.documentElement.className = 'ie' } </script>
+    <script src="{{assets}}/js/components/modernizr.js"></script>
+    <link rel="icon" type="image/x-icon" href="{{assets}}/img/favicon.ico" />
+  </head>
+  <body class="{{this.bodyClass}}">
+
+    {{> mainNavBar }}
+
+    {{#block "body"}}
+      {{> body }}
+    {{/block}}
+
+    {{#block "scripts"}}
+      <script src="{{assets}}/js/components/jquery.min.js"></script>
+      <script src="{{assets}}/js/components/jquery.mousewheel.js"></script>
+      <script src="{{assets}}/js/components/jquery.touchSwipe.min.js"></script>
+      <script src="{{assets}}/js/components/underscore.js"></script>
+      <script src="{{assets}}/js/components/jquery.fancybox.pack.js"></script>
+      <script src="{{assets}}/js/components/jquery.fancybox-media.js"></script>
+      <script src="{{assets}}/js/base.js"></script>
+      <script src="{{assets}}/js/main.js"></script>
+    {{/block}}
+  </body>
+</html>

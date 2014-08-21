@@ -1,0 +1,7 @@
+title: Sandrine Piechota
+mainMenu: [
+  { overTitle: "Qu'est-ce que l'", title: 'Ostéopathie', target: '/#osteopathie' },
+  { overTitle: "Déroulement d'", title: 'une séance', target: '/#deroulement' },
+  { overTitle: "Ma", title: 'formation', target: '/#formation' },
+  { overTitle: "Me", title: 'contacter', target: '/#contact' }
+]

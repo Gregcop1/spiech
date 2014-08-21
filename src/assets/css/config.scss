@@ -1,0 +1,39 @@
+// Fallback for no mediaquery support (gutter will no longer be the default one)
+$baseWidth  : 990px;
+
+// Max size of the page
+$max        : 1200;
+$maxWidth   : $max * 1px;
+
+// Gutter width for the grid system
+$gutter     : 30 / $max * 100%;
+
+// default radius
+$defaultRadius  : 3px;
+
+// # Colors
+$white  : #fff;
+$black  : #282828;
+$black2 : #212c76;
+
+$grey  : #5e5e5e;
+$grey2 : #c4c4c4;
+$grey3 : #e0e0e0;
+
+$pink  : #59394c;
+$pink2 : #c52a84;
+$pink3 : #dfc2d3;
+
+$outlineBlue : #aad4ff;
+$errorRed    : #e04831;
+
+
+
+// # Fonts
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
+$font   : 'Oswald', sans-serif;
+
+// # Font-size
+$light  : 300;
+$normal : 400;
+$bold   : 700;

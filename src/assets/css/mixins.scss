@@ -1,0 +1,60 @@
+// Set the default page width
+@mixin page { margin: 0 auto; width: $baseWidth;
+  @media screen and (min-width: 0px) { width: $maxWidth; max-width: 100%; }
+}
+
+// Preset navigation layout
+@mixin nav {
+  display: block; margin: 0; padding: 0;
+  li { display: inline-block; margin: 5px; padding: 0; }
+  li:hover {
+    // Show second navigation level on hover
+    .second { display: block;}
+  }
+  // Hide second navigation level
+  .second { position: absolute; display: none;}
+}
+
+// Emulate background sizing for Internet Explorer 8
+@mixin backgound-size( $size... ) {
+  background-size: $size;
+  -ms-behavior: url(/backgroundsize.min.htc);
+}
+
+@mixin border-radius ($args: $defaultRadius) {
+    border-radius         : $args;
+    -webkit-border-radius : $args;
+    -moz-border-radius    : $args;
+}
+
+@mixin text-shadow ($args: $defaultTextShadow) {
+    text-shadow         : $args;
+    -moz-text-shadow    : $args;
+    -webkit-text-shadow : $args;
+}
+
+@mixin translateY( $topValue ) {
+ .no-csstransforms & { top: $topValue; bottom: auto;  }
+ .csstransforms & { transform: translate(0,$topValue); }
+ .csstransforms3d & { transform: translate3d(0,$topValue,0); }
+}
+
+@mixin translateX( $right ) {
+ .no-csstransforms & { right: $right; left: auto; }
+ .csstransforms & { transform: translate($right,0); }
+ .csstransforms3d & { transform: translate3d($right,0,0); }
+}
+
+@mixin icon {
+  font-family: $icon;
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+}
+
+// pink gradient background
+@mixin bgb-linear {
+  background-color: $pink2; background : linear-gradient(y, $pink2, $pink3);
+}
+@mixin bgb-radial {
+  background-color: $pink2; background : radial-gradient(circle at center center, $pink2, $pink3);
+}

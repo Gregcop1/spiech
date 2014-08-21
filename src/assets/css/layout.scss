@@ -1,0 +1,45 @@
+// # layout: the commun websites styles
+// ( header/footer ) & template specific.
+
+// ## Reset
+// Reset font-size for easier use : 1.6em = 16px
+html { font-size: 62.5%; line-height: 1.3em; }
+body{ margin: 0; padding: 0; font-family: $font; font-size: 1em; color: $black;  font-weight: $normal; }
+
+a { text-decoration: none; color: $pink2;
+  img{ border: 0; }
+  &:hover { text-decoration: underline; }
+}
+
+// ## Default margins
+h1, .h1-like  { margin: 25px 0; }
+h2, .h2-like  { margin: 25px 0; }
+h3, .h3-like  { margin: 25px 0; }
+h4, .h4-like  { margin: 20px 0; }
+h5, .h5-like  { margin: 20px 0; }
+.introduction { margin: 30px 0; }
+p, p.bodytext, h6, .h6-like{ margin: 25px 0; }
+td p, td p.bodytext{ margin: 0; }
+ul{ margin: 30px 0;
+  li{ margin: 5px 0; }
+}
+
+// ## Default Font size
+p, li, td, th, textarea, caption, pre, blockquote, label, input, select, textarea { font-size: 1.5em; line-height: 1.4em; }
+li li, li p, td p, th p, li h1, li .h1-like, li h2, li .h2-like, li h3, li .h3-like, li h4, li .h4-like, li h5, li .h5-like, li h6, li .h6-like, button { font-size: 100%; }
+input, select, textarea { font-family: $font; }
+h1, .h1-like , h2, .h2-like , h3, .h3-like , h4, .h4-like, h5, .h5-like { line-height: 1em; }
+h1, .h1-like { font-size: 3.5em; }
+h2, .h2-like, .important { font-size: 2.4em; }
+h3, .h3-like { font-size: 1.9em; }
+h4, .h4-like, .introduction { font-size: 1.7em; }
+h5, .h5-like { font-size: 1.6em; }
+h6, .h6-like { font-size: 1.4em; }
+
+// ## Separator
+hr { margin: 40px auto; border: none; height: 1px; background-color: $grey; }
+hr.clear {clear: both;  height: 0px; }
+
+// ## General
+body { overflow: hidden;
+  color: $grey; }

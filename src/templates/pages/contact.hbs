@@ -1,0 +1,41 @@
+---
+title: Contact
+menuItem: 4
+bodyClass: contact
+---
+{{#extend "default"}}
+
+  {{#content "body"}}
+  <div id="slices" class="slices">
+    <div class="slice slice-1 future">
+      <div class="column column-50 column-left"></div>
+      <div class="column column-50 column-right">
+        <div class="infosContact">
+          <h2><img src="{{assets}}/img/services_tishman_logo.gif" width="360" height="80" alt="Tishman Speyer"></h2>
+          <address>
+            49-51 Avenue George V, 75008 Paris<br>
+            01 56 89 93 00<br>
+            <a href="http://www.tishmanspeyer.com" target="_blank">http://www.tishmanspeyer.com</a><br>
+          </address>
+          <p>
+            <a href="http://www.cbre.com/FR/Pages/Home.aspx" target="_blank">
+              <img src="{{assets}}/img/contact_cbre.gif" width="151" height="54" alt=""><br>
+              01 53 64 33 32
+            </a>
+            <a href="https://immobilier.joneslanglasalle.fr/" target="_blank">
+              <img src="{{assets}}/img/contact_jll.gif" width="152" height="61" alt=""><br>
+              01 40 55 23 23
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/content}}
+
+  {{#content "scripts" mode="append"}}
+    <script src="{{assets}}/js/SliceManager.js"></script>
+    <script src="{{assets}}/js/contact.js"></script>
+  {{/content}}
+
+{{/extend}}

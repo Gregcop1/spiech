@@ -1,0 +1,59 @@
+---
+title: Accueil
+menuItem: 0
+bodyClass: home
+---
+{{#extend "default"}}
+
+{{#content "body"}}
+<div id="slices" class="slices">
+  <div id="index" class="slice slice-1 future">
+    <div class="column column-50 column-left"></div>
+    <div class="column column-50 column-right">
+      <div class="bloc">
+        <h2>Choisir<br /><strong>Pacific</strong></h2>
+        <ul>
+          <li>Pour son implantation <strong>au c&oelig;ur de La Défense</strong>, premier quartier d'affaires européen</li>
+          <li>Pour sa <strong>signature architecturale unique</strong></li>
+          <li>Pour son offre complète de surfaces <strong>de 750 à plus de 25 000 m<sup>2</sup></strong></li>
+          <li>Pour l'<strong>efficacité et la luminosité exceptionnelles</strong> de ses plateaux</li>
+          <li>Pour sa <strong>large gamme de services</strong></li>
+          <li>Pour l'exigence de qualité d'<strong>un immeuble Tishman Speyer</strong></li>
+        </ul>
+      </div>
+    </div>
+    <div class="arrowDown">d</div>
+  </div>
+  <div id="prenez-position" class="slice slice-2 future">
+    <div class="column column-50 column-left background-animation">
+      <a href="{{relative dest "localisation-et-acces.html"}}" class="bloc transparentBloc">Localisation & Accès</a>
+    </div>
+    <div class="column column-50 column-right background-animation">
+      <a href="{{relative dest "signature-architecturale.html"}}" class="bloc transparentBloc">Signature architecturale</a>
+    </div>
+  </div>
+  <div id="new-workplace-solutions" class="slice slice-3 future">
+    <div class="column column-50 column-left background-animation">
+      <a href="{{relative dest "espaces-de-travail.html"}}" class="bloc transparentBloc">Espace de travail</a>
+    </div>
+    <div class="column column-50 column-right background-animation">
+      <a href="{{relative dest "services.html"}}" class="bloc transparentBloc">Services</a>
+    </div>
+  </div>
+  <div id="performances-techniques" class="slice slice-4 future">
+    <div class="column column-50 column-left background-animation">
+      <a href="{{relative dest "performances-techniques.html"}}" class="bloc transparentBloc">Performances techniques</a>
+    </div>
+    <div class="column column-50 column-right background-animation">
+      <a href="{{relative dest "contact.html"}}" class="bloc transparentBloc">Contact</a>
+    </div>
+  </div>
+</div>
+{{/content}}
+
+
+{{#content "scripts" mode="append"}}
+<script src="{{assets}}/js/SliceManager.js"></script>
+<script src="{{assets}}/js/home.js"></script>
+{{/content}}
+{{/extend}}

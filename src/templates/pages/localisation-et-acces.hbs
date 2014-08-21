@@ -1,0 +1,119 @@
+---
+title: Localisation et accès
+menuItem: 1
+bodyClass: localisation-et-acces
+---
+{{#extend "default"}}
+
+{{#content 'subMenu'}}
+<div class="subMenu">
+  <span>{{this.title}}</span>
+  <ul id="subNav" class="nav subNav">
+    <li>La défense</li>
+    <li>Le Quartier Valmy</li>
+    <li>Les Jardins de l'Arche</li>
+    <li>Connexion capitale</li>
+  </ul>
+</div>
+{{/content}}
+
+{{#content "body"}}
+<div id="slices" class="slices">
+  <div id="la-defense" class="slice slice-1 future">
+    <div class="column column-50 column-left">
+      <div class="bloc blocInfos">
+        <p><span class="number">565</span> hectares</p>
+        <p><span class="number">3,5</span> millions de bureaux</p>
+        <p><span class="number">3000</span> entreprises</p>
+        <p><span class="number">200 000</span> salariés</p>
+        <p><span class="number">45 000</span> étudiants</p>
+        <p><span class="number">2</span> grands pôles commerciaux :<br />le CNIT et Les Quatre Temps</p>
+        <p><span class="number">170</span> restaurants et sandwicheries</p>
+        <p><span class="number">270</span> boutiques</p>
+        <p>Plus de <span class="number">20 000 m<sup>2</sup></span> d'espaces de congrès-exposition</p>
+      </div>
+      <div class="bloc blocTitle">
+        <h2>
+          <span class="title">La Défense</span>
+          <span class="subtitle">un site<br />unique<br />en Europe</span>
+        </h2>
+      </div>
+    </div>
+    <div class="arrowDown">d</div>
+  </div>
+  <div id="le-quartier-valmy" class="slice slice-2 future">
+    <div class="column column-50 column-left">
+      <div class="bloc blocTitle">
+        <h2>Quartier Valmy, les Jardins de l’Arche : un environnement renouvelé</h2>
+      </div>
+      <div class="bloc blocInfos">
+        <h3>Le Quartier Valmy</h3>
+        <p class="align-justify">Pacific bénéficie d’une situation privilégiée au sein du <strong>Quartier Valmy</strong>, un lieu vivant et arboré à La Défense. L’immeuble est ouvert sur l’animation du Cours Valmy, véritable place urbaine accueillant commerces, restaurants, et l’Hôtel Renaissance Paris La Défense, à proximité immédiate de la Grande Arche et du centre commercial Les quatre temps.</p>
+      </div>
+
+    </div>
+  </div>
+  <div id="les-jardins-de-l-arche" class="slice slice-3 future">
+    <div class="column column-50 column-left">
+      <div class="bloc blocInfos">
+        <h3>L’Arena 92 et les Jardins de l’Arche</h3>
+        <p class="align-justify">Se développant au pied de l’immeuble, le projet des <strong>Jardins de l’Arche</strong> va profondément changer la physionomie de La Défense, offrant au Quartier Valmy et à Pacific un environnement toujours plus dynamique. Une large coulée verte, le long de laquelle seront créés restaurants, équipements sportifs et hôteliers, s’élancera de la Grande Arche jusqu’à Nanterre. Au bout de ce parvis élargi et continu, l’Arena 92, nouveau stade dessiné par l’architecte Christian de Portzamparc, proposera spectacles et événements sportifs tout au long de l’année.</p>
+      </div>
+
+    </div>
+  </div>
+  <div id="connexion-capitale" class="slice slice-4 future">
+    <div class="column column-50 column-left"></div>
+    <div class="column column-50 column-right"></div>
+    <div class="column column-70"><img src="{{assets}}/img/PP_localisation_plan.png" width="1477" height="900" alt=""/></div>
+    <div class="column column-30 column-right">
+      <h2>Connexion<br /><strong>Capitale</strong></h2>
+      <p>Située à quelques pas du hub « La Défense – Grande Arche », Pacific bénéficie de la proximité immédiate de la première station de transport multimodal d’Ile-de-France, qui place tous les quartiers stratégiques de la Capitale à moins de 15 minutes de l’immeuble.</p>
+      <p><img src="{{assets}}/img/PP_localisation_connexion_schema.png" width="234" height="68" alt=""/></p>
+      <h3>Temps de transport</h3>
+      <table width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="label">Charles de Gaulle - Etoile</td>
+          <td class="value">6 mn</td>
+        </tr>
+        <tr>
+          <td class="label">Opéra</td>
+          <td class="value">15 mn</td>
+        </tr>
+        <tr>
+          <td class="label">Gare Saint-Lazare</td>
+          <td class="value">21 mn</td>
+        </tr>
+        <tr>
+          <td class="label">Châtelet les Halles</td>
+          <td class="value">12 mn</td>
+        </tr>
+        <tr>
+          <td class="label">Gare de Lyon</td>
+          <td class="value">30 mn</td>
+        </tr>
+        <tr>
+          <td class="label">Aéroport d'Orly</td>
+          <td class="value">34 mn</td>
+        </tr>
+        <tr>
+          <td class="label">Aéroport Roissy CDG</td>
+          <td class="value">37 mn</td>
+        </tr>
+        <tr>
+          <td class="label">Rueil Malmaison</td>
+          <td class="value">15 mn</td>
+        </tr>
+      </table>
+      <p class="source">( Source RATP et Mappy)</p
+      </div>
+    </div>
+  </div>
+  {{/content}}
+
+
+  {{#content "scripts" mode="append"}}
+  <script src="{{assets}}/js/SliceManager.js"></script>
+  <script src="{{assets}}/js/prenezPosition.js"></script>
+  {{/content}}
+  {{/extend}}
