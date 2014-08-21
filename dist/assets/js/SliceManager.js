@@ -126,12 +126,14 @@
     SliceManager.prototype._binds = function() {
       $(window).on('mousewheel', _.debounce(this._manageWheel, 100, true));
       $(window).on('keydown', this._manageKey);
-      $('body').swipe({
-        swipeLeft: this.gotoNextSlice,
-        swipeUp: this.gotoNextSlice,
-        swipeRight: this.gotoPreviousSlice,
-        swipeDown: this.gotoPreviousSlice
-      });
+      if ($('html').hasClass('touch')) {
+        $('body').swipe({
+          swipeLeft: this.gotoNextSlice,
+          swipeUp: this.gotoNextSlice,
+          swipeRight: this.gotoPreviousSlice,
+          swipeDown: this.gotoPreviousSlice
+        });
+      }
       return this;
     };
 

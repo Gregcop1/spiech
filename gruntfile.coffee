@@ -119,10 +119,16 @@ module.exports = (grunt) ->
     # remove any previously-created files.
     clean: ["<%= config.dist %>/**/*.{html,xml}"]
 
+    gh-pages:
+      options:
+        base: 'dist'
+      src: ['**']
+
   grunt.loadNpmTasks "assemble"
   grunt.loadNpmTasks "grunt-contrib-clean"
   grunt.loadNpmTasks "grunt-contrib-connect"
   grunt.loadNpmTasks "grunt-contrib-watch"
+  grunt.loadNpmTasks "grunt-gh-pages"
   grunt.registerTask "server", [
     "clean"
     "assemble"

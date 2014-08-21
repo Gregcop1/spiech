@@ -85,12 +85,13 @@ class SliceManager
   _binds: ()->
     $(window).on('mousewheel',  _.debounce(@_manageWheel, 100, true))
     $(window).on('keydown', @_manageKey)
-    $('body').swipe({
-      swipeLeft: @gotoNextSlice,
-      swipeUp: @gotoNextSlice,
-      swipeRight: @gotoPreviousSlice,
-      swipeDown: @gotoPreviousSlice
-    });
+    if $('html').hasClass('touch')
+      $('body').swipe({
+        swipeLeft: @gotoNextSlice,
+        swipeUp: @gotoNextSlice,
+        swipeRight: @gotoPreviousSlice,
+        swipeDown: @gotoPreviousSlice
+      });
     return @
 
 
