@@ -119,7 +119,7 @@ module.exports = (grunt) ->
     # remove any previously-created files.
     clean: ["<%= config.dist %>/**/*.{html,xml}"]
 
-    gh-pages:
+    'gh-pages':
       options:
         base: 'dist'
       src: ['**']
