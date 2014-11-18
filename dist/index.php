@@ -79,9 +79,19 @@
         <div class="column column-50">
           <h2>Me contacter</h2>
           <form action="/#contact" enctype="multipart/form-data" method="POST">
-            <input type="text" name="name" placeholder="Nom"/>
-            <input type="email" name="email" placeholder="Email"/>
-            <textarea name="message" placeholder="Message"></textarea>
+            <?php
+              foreach($_POST as $k=>$v) {
+               $_POST[$k] = htmlspecialchars(trim($v)); 
+              }
+              if(isset($_POST['firstname']) && $_POST['firstname']=='' && $_POST['name']!='' && $_POST['email']!='' && $_POST['message']!='') {
+                // envoi de mail
+                echo '<p>Votre message a été transféré avec succès. Je reviens vers vous au plus vite.</p>'
+              }
+            ?>
+            <input type="text" name="firstname" class="firstname"/>
+            <input type="text" name="name" required="1" placeholder="Nom"/>
+            <input type="email" name="email" required="1" placeholder="Email"/>
+            <textarea name="message" required="1" placeholder="Message"></textarea>
             <input type="submit" name="submit" value="Envoyer"/>
           </form>
         </div><!--

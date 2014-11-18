@@ -49,18 +49,6 @@ module.exports = (grunt) ->
         browsers: ["last 3 version", "ie 8", "ie 7"]
         src: '<%=config.cssDist %>/main.css'
 
-    express:
-      all:
-        options:
-          bases: ['c:\\www\\spiech']
-          port: 8080
-          hostname: '0.0.0.0'
-          livereload: true
-
-    open:
-      all:
-        path: 'http://localhost:8080/dist/'
-
     watch:
       assemble:
         files: ["<%= config.src %>/{content,data,templates}/{,*/}*.{md,hbs,yml}"]
@@ -83,7 +71,29 @@ module.exports = (grunt) ->
           'coffee:sm'
         ]
 
-      
+      livereload:
+        options:
+          livereload: "<%= connect.options.livereload %>"
+
+        files: [
+          "<%= config.dist %>/{,*/}*.html"
+          "<%= config.dist %>/assets/{,*/}*.css"
+          "<%= config.dist %>/assets/{,*/}*.js"
+          "<%= config.dist %>/assets/{,*/}*.{png,jpg,jpeg,gif,webp,svg}"
+        ]
+
+    connect:
+      options:
+        port: 9000
+        livereload: 35729
+
+        # change this to '0.0.0.0' to access the server from outside
+        hostname: "<%= config.host%>"
+
+      livereload:
+        options:
+          open: true
+          base: ["<%= config.dist %>"]
 
     assemble:
       pages:
@@ -127,8 +137,6 @@ module.exports = (grunt) ->
 
     "coffee:build"
     "coffee:sm"
-    "express"
-    "open"
     "watch"
   ]
   grunt.registerTask "build", [
