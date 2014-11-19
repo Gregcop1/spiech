@@ -137,7 +137,6 @@ module.exports = (grunt) ->
 
     "coffee:build"
     "coffee:sm"
-    "connect:livereload"
     "watch"
   ]
   grunt.registerTask "build", [

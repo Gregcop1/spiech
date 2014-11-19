@@ -2,15 +2,20 @@
   "name": "spiech",
   "description": "Sandrine Piechota website",
   "version": "1.0.0",
-  "author": {
-    "name": "Grégory Copin"
-  },
-  "repository": {},
-  "bugs": {},
+  "homepage": "https://github.com/Gregcop1/spiech",
+  "authors": [
+    "Grégory Copin <gregcop1@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
   "dependencies": {
     "modernizr": "latest",
-    "jquery": "~1.10.0",
-  },
-  "devDependencies": {
+    "jquery": "~1.10.0"
   }
 }
