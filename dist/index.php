@@ -7,6 +7,8 @@
     <title>Sandrine Piechota | Ostéopathe</title>
     <link rel="stylesheet" href="assets/css/jquery.fancybox.css" media="all" />
     <link rel="stylesheet" href="assets/css/main.css" media="all" />
+    <meta name="description" content="Cabinet de Sandrine Piechota, Ostéopathe. L'ostéopathie consiste en une méthode de soins manuels déterminant et traitant les restrictions de mobilité du corps humain. Son concept repose sur la globalité du patient." >
+    <meta name="keywords" content="mal de dos,migraines, troubles digestifs, vertiges, tendinites, entorses, nourrisson, personne âgée, manipulation, manipulations crâniennes, manipulations articulaires, manipulations viscérales" >
 
     <script type="text/javascript"> if(navigator.appName.indexOf("Internet Explorer")!=-1) { document.documentElement.className = 'ie' } </script>
     <script src="assets/js/components/modernizr.js"></script>
@@ -40,7 +42,6 @@
   <div id="index" class="slice slice-1 future">
     <div class="column column-50 column-left"></div>
     <div class="column column-50 column-right"></div>
-    <div class="arrowDown">d</div>
   </div>
   <div id="osteopathie" class="slice slice-2 future">
     <div class="column column-50 column-left">
@@ -85,7 +86,14 @@
               }
               if(isset($_POST['firstname']) && $_POST['firstname']=='' && $_POST['name']!='' && $_POST['email']!='' && $_POST['message']!='') {
                 // envoi de mail
-                echo '<p>Votre message a été transféré avec succès. Je reviens vers vous au plus vite.</p>'
+                $subject = "Message provenant du site";
+                $eol = '
+';
+                $message = 'Nom: '.$_POST['name'].$eol
+                  .'Email: '.$_POST['email'].$eol
+                  .'Message: '.$_POST['message'];
+                mail('Sandrine Piechota <sandrinepiechota.osteo@gmail.com>', $subject, $message);
+                echo '<p>Votre message a été transféré avec succès. Je reviens vers vous au plus vite.</p>';
               }
             ?>
             <input type="text" name="firstname" class="firstname"/>

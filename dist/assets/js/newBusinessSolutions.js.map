@@ -1,7 +1,7 @@
 {
   "version": 3,
   "file": "newBusinessSolutions.js",
-  "sourceRoot": "..\\..\\..\\src\\assets\\js\\",
+  "sourceRoot": "../../../src/assets/js/",
   "sources": [
     "newBusinessSolutions.coffee"
   ],

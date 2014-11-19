@@ -115,6 +115,7 @@
 			text-align: left;
 			h2 { margin: 0 0 10px;
 				color: $white; }
+			.firstname { display: none; }
 			input[type="text"],
 			input[type="email"],
 			textarea { margin: 5px 0; padding: 4px 1%; width: 94%; height: 20px; border: 0; border-right: 1px solid $grey2; border-bottom: 1px solid $grey3;

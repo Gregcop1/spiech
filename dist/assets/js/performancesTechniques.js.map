@@ -1,7 +1,7 @@
 {
   "version": 3,
   "file": "performancesTechniques.js",
-  "sourceRoot": "..\\..\\..\\src\\assets\\js\\",
+  "sourceRoot": "../../../src/assets/js/",
   "sources": [
     "performancesTechniques.coffee"
   ],

@@ -431,6 +431,8 @@ body {
   .home .slice-5 .bloc h2 {
     margin: 0 0 10px;
     color: #fff; }
+  .home .slice-5 .bloc .firstname {
+    display: none; }
   .home .slice-5 .bloc input[type="text"], .home .slice-5 .bloc input[type="email"], .home .slice-5 .bloc textarea {
     margin: 5px 0;
     padding: 4px 1%;
