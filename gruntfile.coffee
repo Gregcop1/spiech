@@ -100,7 +100,9 @@ module.exports = (grunt) ->
         options:
           flatten: true
           assets: "<%= config.dist %>/assets"
-          partials: ["<%= config.src %>/templates/partials/*.hbs", "<%= config.src %>/templates/layouts/*.hbs"]
+          partials: [
+            "<%= config.src %>/templates/partials/*.hbs", "<%= config.src %>/templates/layouts/*.hbs"
+          ]
           layout: false
           data: "<%= config.src %>/data/*.{json,yml}"
           helpers: "<%= config.src %>/helpers/*.coffee"
@@ -110,9 +112,7 @@ module.exports = (grunt) ->
           ]
 
         files:
-          "<%= config.dist %>/": [
-            "<%= config.src %>/templates/pages/*.hbs"
-          ]
+          "<%= config.dist %>/": "<%= config.src %>/templates/pages/*.hbs"
 
 
     # Before generating any new files,

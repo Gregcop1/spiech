@@ -1,0 +1,28 @@
+---
+title: Déroulement
+menuItem: 1
+bodyClass: deroulement
+---
+{{#extend "default"}}
+
+{{#content "body"}}
+<div id="slices" class="slices">
+  <div id="deroulement" class="ajax slice slice-3 future">
+    <div class="column column-50 column-left">
+      <div class="bloc">
+        <h2>Déroulement d'une séance</h2>
+        <p>Une séance dure en moyenne 45 minutes et se décompose en un interrogatoire reprenant l'historique du motif de consultation, un examen clinique et le traitement.</p>
+        <p>Le montant de la consultation est de 50€ et 45€ chez les enfants de moins de 3 ans. Il n'y a aucune prise en charge de la sécurité sociale mais un grand nombre de mutuelles propose un remboursement forfaitaire à l'année.</p>
+      </div>
+    </div>
+    <div class="column column-50 column-right"></div>
+  </div>
+</div>
+{{/content}}
+
+
+{{#content "scripts" mode="append"}}
+<script src="{{assets}}/js/SliceManager.js"></script>
+<script src="{{assets}}/js/interne.js"></script>
+{{/content}}
+{{/extend}}

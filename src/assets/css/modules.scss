@@ -85,10 +85,16 @@
 	font-size: 3.2em; font-weight: $light; color: white; text-align: center; }
 
 // # Home
-.home {
+body {
 	.slice-1 {
 		.column-left { background-image: url(../img/slice-1-left.jpg); }
 		.column-right { background-image: url(../img/slice-1-right.jpg); }
+		.bloc { display: none; top: 30%; left: 0; right: 0; 
+			text-align: center;
+			h2 { font-size: 5em; color: $white; }
+			.mini { display: block; 
+				font-size: .6em; font-weight: $light; color: $pink2; text-transform: uppercase; } 
+		}
 	}
 	.slice-2 {
 		.column-left { background-image: url(../img/slice-2-left.jpg); }
@@ -130,7 +136,7 @@
 			.under { text-decoration: underline; }
 		}
 	}
-	.slice-2, .slice-3, .slice-4 {
+	.slice-1, .slice-2, .slice-3, .slice-4 {
 		.column-left .bloc { @include translateX(-100%); }
 		.column-right .bloc { @include translateX(100%); }
 		&.current .bloc { @include translateX(0); transition-delay: 700ms; }
@@ -144,6 +150,74 @@
 		font-family: $font; font-size: 1.2em; font-weight: $light; text-transform: uppercase; text-align: center; white-space: nowrap; }
 	h4 { margin: 0;
 		font-family: $font; font-size: 1.8em; font-weight: $normal; text-align: center; white-space: nowrap; }
-	.gm-style-iw { right: 12px; width: auto !important; }
-	.gm-style-iw, .gm-style-iw > div { overflow: hidden !important; }
+	.gm-style-iw { right: 12px;  }
+	.gm-style-iw, .gm-style-iw div { overflow: hidden !important; }
+}
+
+@media screen and (min-width: 0px) {
+    //Apply max-width on image for browser capable of handling it
+    .csc-textpic-imagewrap, img { max-width: 100%; height: auto;}
+}
+
+// 764px is the vertical iPad width, you should edit it to match the wanted layout breakpoint
+@media screen and (max-width: 764px) {
+    // Reset layout to one column
+    // .column { display: block; width: auto!important; margin: 0!important; }
+}
+
+@media screen and (max-width: 1024px) {
+  .mainNav  li { margin: 6px 10px 6px 10px; }
+  .subMenu { padding: 15px 10px;}
+  .subMenu li { font-size: 1.1em; }
+  .subMenu li:before { margin: 0 10px; }
+  .bloc h2 { margin: 10px 0; }
+  .home .slice-1 .bloc { padding: 20px; }
+}
+
+// horizontal 7"
+@media screen and (max-height: 605px) {
+	.touch {
+		.slice-5 {
+			.bloc { top: -10px; }
+			.gmap { height: 180px; }
+		}
+	}
+}
+
+// Vertical mobile
+@media screen and (max-width: 668px) {
+  .touch {
+		.header { bottom: 10px;
+			.logo { top: 0; left: 10px; width: 30px; height: 30px; }
+			.baseline { display: none; }
+			li { font-size: 1.4em; }
+		}
+
+  	.slice .bloc { padding-left: 10%; padding-right: 10%; width: 180%; }
+		.slice-1 {
+			.column-left { z-index: 2; }
+			.column-right { z-index: 1; }
+			.bloc { display: block; }
+		}
+		.slice-2 {
+			.column-left { z-index: 2; }
+			.column-right { z-index: 1; }
+		}
+		.slice-3 {
+			.column-left { z-index: 2; }
+			.column-right { z-index: 1; }
+		}
+		.slice-4 {
+			.column-left { z-index: 1; }
+			.column-right { z-index: 2; }
+			.bloc { left: -100%; }
+		}
+		.slice-5 {
+			.column-left { width: 0; }
+			.column-right { width: 100%; }
+			.bloc { top: 20px; padding: 0 5%; width: 90%; }
+			.bloc p { font-size: 1.3em; }
+			.gmap { height: 200px; }
+		}
+  }
 }

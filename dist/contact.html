@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sandrine Piechota | Ostéopathe</title>
+    <title>Contact | Sandrine Piechota</title>
     <link rel="stylesheet" href="assets/css/jquery.fancybox.css" media="all" />
     <link rel="stylesheet" href="assets/css/main.css" media="all" />
     <meta name="description" content="Cabinet de Sandrine Piechota, Ostéopathe. L'ostéopathie consiste en une méthode de soins manuels déterminant et traitant les restrictions de mobilité du corps humain. Son concept repose sur la globalité du patient." >
@@ -14,7 +14,7 @@
     <script src="assets/js/components/modernizr.js"></script>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
   </head>
-  <body class="home">
+  <body class="contact">
 
     
 
@@ -39,9 +39,42 @@
 
     
 <div id="slices" class="slices">
-  <div id="index" class="slice slice-1 future">
+  <div id="contact" class="ajax slice slice-5 future">
     <div class="column column-50 column-left"></div>
-    <div class="column column-50 column-right"></div>
+    <div class="column column-50 column-right">
+      <div class="bloc columns columns-50-50">
+        <div class="column column-50">
+          <h2>Me contacter</h2>
+          <form action="/#contact" enctype="multipart/form-data" method="POST">
+            <input type="text" name="name" placeholder="Nom"/>
+            <input type="email" name="email" placeholder="Email"/>
+            <textarea name="message" placeholder="Message"></textarea>
+            <input type="submit" name="submit" value="Envoyer"/>
+          </form>
+        </div><!--
+        --><div class="column column-50">
+          <address>
+            Sandrine PIECHOTA<br />
+            161, rue Florent Evrard<br />
+            62220 CARVIN<br />
+            Tél. : 06 78 32 55 31
+          </address>
+          <p>
+            <span class="under">Horaire d'ouverture :</span><br />
+            les lundi, mardi, mercredi et vendredi<br />
+            de 8h à 20h sur rendez-vous<br />
+            le samedi de 9h à 13h sur rendez-vous.
+          </p>
+          <p>
+            <span class="under">Fermeture :</span><br />
+            les jeudi et dimanche toute la journée.
+          </p>
+        </div>
+
+        <div id="GMap" class="gmap"></div>
+      </div>
+
+    </div>
   </div>
 </div>
 
@@ -56,9 +89,8 @@
       <script src="assets/js/base.js"></script>
       <script src="assets/js/main.js"></script>
     
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb7X0w6bvwuXXqQ282CTv1Pr-__UnXl_w&amp;sensor=true"></script>
 <script src="assets/js/SliceManager.js"></script>
-<script src="assets/js/home.js"></script>
+<script src="assets/js/interne.js"></script>
 
   </body>
 </html>

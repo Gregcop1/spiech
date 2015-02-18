@@ -1,0 +1,28 @@
+---
+title: Osteopathie
+menuItem: 1
+bodyClass: osteopathie
+---
+{{#extend "default"}}
+
+{{#content "body"}}
+<div id="slices" class="slices">
+  <div id="osteopathie" class="ajax slice slice-2 future">
+    <div class="column column-50 column-left">
+      <div class="bloc">
+        <h2>Qu'est-ce que l'ostéopathie ?</h2>
+        <p>L'ostéopathie consiste en une méthode de soins manuels déterminant et traitant les restrictions de mobilité du corps humain. Son concept repose sur la globalité du patient.</p>
+        <p>Connue pour le mal de dos, elle traite également les migraines, troubles digestifs, vertiges, tendinites, entorses etc. allant du nourrisson à la personne âgée. Différentes techniques existent : crâniennes, articulaires et viscérales.</p>
+      </div>
+    </div>
+    <div class="column column-50 column-right"></div>
+  </div>
+</div>
+{{/content}}
+
+
+{{#content "scripts" mode="append"}}
+<script src="{{assets}}/js/SliceManager.js"></script>
+<script src="{{assets}}/js/interne.js"></script>
+{{/content}}
+{{/extend}}

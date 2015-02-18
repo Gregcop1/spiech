@@ -1,0 +1,28 @@
+---
+title: Formation
+menuItem: 1
+bodyClass: formation
+---
+{{#extend "default"}}
+
+{{#content "body"}}
+<div id="slices" class="slices">
+  <div id="formation" class="ajax slice slice-4 future">
+    <div class="column column-50 column-left"></div>
+    <div class="column column-50 column-right">
+      <div class="bloc">
+        <h2>Ma formation</h2>
+        <p>Je suis diplômée de l'Institut Supérieur d'Ostéopathie de Lille (formation continue sur 5 ans). J'ai également suivi une formation supplémentaire en ostéopathie pédiatrique sur Paris pour approfondir mes connaissances sur les nourrissons, enfants, adolescents et femmes enceintes.</p>
+        <p>J'ai débuté mon activité par des remplacements que je continue en parallèle du cabinet sur Carvin. J'effectue également des vacations à Auchy les Mines dans un cabinet de sages femmes.</p>
+      </div>
+    </div>
+  </div>
+</div>
+{{/content}}
+
+
+{{#content "scripts" mode="append"}}
+<script src="{{assets}}/js/SliceManager.js"></script>
+<script src="{{assets}}/js/interne.js"></script>
+{{/content}}
+{{/extend}}

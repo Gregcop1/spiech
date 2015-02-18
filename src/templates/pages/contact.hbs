@@ -1,0 +1,55 @@
+---
+title: Contact
+menuItem: 1
+bodyClass: contact
+---
+{{#extend "default"}}
+
+{{#content "body"}}
+<div id="slices" class="slices">
+  <div id="contact" class="ajax slice slice-5 future">
+    <div class="column column-50 column-left"></div>
+    <div class="column column-50 column-right">
+      <div class="bloc columns columns-50-50">
+        <div class="column column-50">
+          <h2>Me contacter</h2>
+          <form action="/#contact" enctype="multipart/form-data" method="POST">
+            <input type="text" name="name" placeholder="Nom"/>
+            <input type="email" name="email" placeholder="Email"/>
+            <textarea name="message" placeholder="Message"></textarea>
+            <input type="submit" name="submit" value="Envoyer"/>
+          </form>
+        </div><!--
+        --><div class="column column-50">
+          <address>
+            Sandrine PIECHOTA<br />
+            161, rue Florent Evrard<br />
+            62220 CARVIN<br />
+            Tél. : 06 78 32 55 31
+          </address>
+          <p>
+            <span class="under">Horaire d'ouverture :</span><br />
+            les lundi, mardi, mercredi et vendredi<br />
+            de 8h à 20h sur rendez-vous<br />
+            le samedi de 9h à 13h sur rendez-vous.
+          </p>
+          <p>
+            <span class="under">Fermeture :</span><br />
+            les jeudi et dimanche toute la journée.
+          </p>
+        </div>
+
+        <div id="GMap" class="gmap"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+{{/content}}
+
+
+{{#content "scripts" mode="append"}}
+<script src="{{assets}}/js/SliceManager.js"></script>
+<script src="{{assets}}/js/interne.js"></script>
+{{/content}}
+{{/extend}}

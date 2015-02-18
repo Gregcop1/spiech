@@ -13,11 +13,10 @@
     "grunt-contrib-uglify": "~0.4.0",
     "grunt-contrib-watch": "*",
     "grunt-gh-pages": "~0.9.1",
-    "grunt-groc": "git://github.com/Plou/grunt-groc.git",
     "grunt-newer": "~0.6.1",
     "grunt-notify": "~0.2.16",
     "grunt-open": "^0.2.3",
-    "grunt-sass": "~0.12.1",
+    "grunt-contrib-sass": "",
     "load-grunt-tasks": "*",
     "time-grunt": "*"
   }
