@@ -89,11 +89,11 @@ body {
 	.slice-1 {
 		.column-left { background-image: url(../img/slice-1-left.jpg); }
 		.column-right { background-image: url(../img/slice-1-right.jpg); }
-		.bloc { display: none; top: 30%; left: 0; right: 0; 
+		.bloc { display: none; top: 30%; left: 0; right: 0;
 			text-align: center;
 			h2 { font-size: 5em; color: $white; }
-			.mini { display: block; 
-				font-size: .6em; font-weight: $light; color: $pink2; text-transform: uppercase; } 
+			.mini { display: block;
+				font-size: .6em; font-weight: $light; color: $pink2; text-transform: uppercase; }
 		}
 	}
 	.slice-2 {
@@ -153,6 +153,9 @@ body {
 	.gm-style-iw { right: 12px;  }
 	.gm-style-iw, .gm-style-iw div { overflow: hidden !important; }
 }
+
+// google content
+.js .nojs { display: none; }
 
 @media screen and (min-width: 0px) {
     //Apply max-width on image for browser capable of handling it

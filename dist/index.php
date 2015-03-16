@@ -40,7 +40,11 @@
     
 <div id="slices" class="slices">
   <div id="index" class="slice slice-1 future">
-    <div class="column column-50 column-left"></div>
+    <div class="column column-50 column-left">
+      <div class="bloc">
+        <h2><span class="baseline"><span class="mini">Sandrine Piechota</span>Ostéopathe</span></h2>
+      </div>
+    </div>
     <div class="column column-50 column-right"></div>
   </div>
 </div>

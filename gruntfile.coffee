@@ -14,7 +14,7 @@ module.exports = (grunt) ->
       smSrc   : 'src/assets/js/SliceManager'
       cssSrc  : 'src/assets/css'
       cssDist : 'dist/assets/css'
-      host    : 'spiech.local.inouit.com'
+      host    : 'spiech.local.com'
 
 
     coffee:
